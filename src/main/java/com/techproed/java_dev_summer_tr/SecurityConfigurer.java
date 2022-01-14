@@ -13,7 +13,7 @@ public class SecurityConfigurer extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         PasswordEncoder encoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
 
-        auth.inMemoryAuthentication().withUser("admin").password(encoder.encode("Esen6463.D")).roles("ADMIN");
+        auth.inMemoryAuthentication().withUser("admin").password(encoder.encode("12345")).roles("ADMIN");
 
     }
 }
